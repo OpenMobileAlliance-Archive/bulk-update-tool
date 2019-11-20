@@ -1,0 +1,52 @@
+$ python ../AddResources.py ../target
+Processing...
+Object ID Object Name              Added Resources
+----------------------------------------------------------------------
+3200      Digital Input            5518 6050
+3201      Digital Output           5518 6050
+3202      Analog Input             5518 6050 6042 6049
+3203      Analog Output            5518 6050 6042 6049
+3300      Generic Sensor           5518 6050 6042 6049
+3301      Illuminance              5750 5518 6050 6042 6049
+3302      Presence                 5750 5518 6050 6042 6049
+3303      Temperature              5750 5518 6050 6042 6049
+3304      Humidity                 5750 5518 6050 6042 6049
+3305      Power Measurement        5750 5518 6050 6042 6049
+3306      Actuation                5518 6050
+3308      Set Point                5518 6050
+3310      Load Control             5750 5518 6050
+3312      Power Control            5518 6050
+3313      Accelerometer            5750 5518 6050 6042 6049
+3314      Magnetometer             5750 5518 6050 6042 6049
+3315      Barometer                5750 5518 6050 6042 6049
+3316      Voltage                  5518 6050 6042 6049
+3317      Current                  5518 6050 6042 6049
+3318      Frequency                5518 6050 6042 6049
+3319      Depth                    5518 6050 6042 6049
+3320      Percentage               5518 6050 6042 6049
+3321      Altitude                 5518 6050 6042 6049
+3322      Load                     5518 6050 6042 6049
+3323      Pressure                 5518 6050 6042 6049
+3324      Loudness                 5518 6050 6042 6049
+3325      Concentration            5518 6050 6042 6049
+3326      Acidity                  5518 6050 6042 6049
+3327      Conductivity             5518 6050 6042 6049
+3328      Power                    5518 6050 6042 6049
+3329      Power Factor             5518 6050 6042 6049
+3330      Distance                 5518 6050 6042 6049
+3331      Energy                   5518 6050 6042 6049
+3332      Direction                5518 6050 6042 6049
+3333      Time                     6042 6049
+3334      Gyrometer                5518 6050 6042 6049
+3335      Colour                   5518 6050 6042 6049
+3336      Location                 5518 6050 6042 6049
+3337      Positioner               5518 6050 6042 6049
+3338      Buzzer                   5518 6050
+3342      On/Off switch            5518 6050
+3346      Rate                     5518 6050 6042 6049
+3347      Push button              5518 6050
+3348      Multi-state Selector     5518 6050
+3349      Bitmap                   5518 6050
+3350      Stopwatch                5518 6050 6042 6049
+10311     Solar Radiation          6050 6042 6049
+Processed total of 47 objects.
