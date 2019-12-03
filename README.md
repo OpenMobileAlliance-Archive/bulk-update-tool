@@ -5,7 +5,7 @@ This repository contains Python scripts to bulk update LwM2M object XML files.
 Scripts import a library (lwm2mv10_lib) that is generated with [generateDS](https://www.davekuhlman.org/generateDS.html) tool.
 The library is provided readily generated. To re-generate this library, follow generateDS documentation how to install generateDS and then issue command:
 
-  python3 generateDS.py -o lwm2mv10_lib.py LWM2M.xsd
+  - python3 generateDS.py -o lwm2mv10_lib.py LWM2M.xsd
  
 where [LWM2M.xsd](http://www.openmobilealliance.org/tech/profiles/LWM2M.xsd) is the schema file which can be downloaded from OMA SpecWorks. 
 
@@ -15,6 +15,6 @@ it into a XML file, all with a reasonably small number of code lines.
 
 Notice: it is recommended to use Python v3. As described in generateDS documentation, generateDS has a dependency on lxml library which need to installed first. In Ubuntu the following commands can be used to install all required dependencies:
 
-sudo apt-get install python3
-sudo apt-get install python3-pip
-pip3 install lxml
+  - sudo apt-get install python3
+  - sudo apt-get install python3-pip
+  - pip3 install lxml
