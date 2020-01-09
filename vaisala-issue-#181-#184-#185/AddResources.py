@@ -152,6 +152,13 @@ def getReusableResource(rrId):
                 return item
     return None
 
+# bump up minor version number
+def bumpVersion(obj):
+    version = obj.get_ObjectVersion().split('.')
+    major = version[0]
+    minor = int(version[1]) + 1
+    obj.set_ObjectVersion("%s.%d" % (major, minor))            
+
 # process given source
 def process(source):
     root = lwm2mv10_lib.parse(source.getFileName(), silence=True)
@@ -166,6 +173,7 @@ def process(source):
             assert rr is not None, "Re-usable resource %d not found." % rrId
             resources.add_Item(rr)
             sys.stdout.write('{:<5d}'.format(rrId))
+        bumpVersion(obj)
 
     sys.stdout.write("\n")
 
