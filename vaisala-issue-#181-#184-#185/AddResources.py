@@ -154,10 +154,14 @@ def getReusableResource(rrId):
 
 # bump up minor version number
 def bumpVersion(obj):
-    version = obj.get_ObjectVersion().split('.')
-    major = version[0]
-    minor = int(version[1]) + 1
-    obj.set_ObjectVersion("%s.%d" % (major, minor))            
+    oldVersion = obj.get_ObjectVersion().split('.')
+    major = oldVersion[0]
+    minor = int(oldVersion[1]) + 1
+    newVersion = "%s.%d" % (major, minor)
+    obj.set_ObjectVersion(newVersion)            
+    urn = obj.get_ObjectURN();
+    #TODO check if old version already exists in URN
+    obj.set_ObjectURN(urn + ":" + newVersion)
 
 # process given source
 def process(source):
@@ -181,7 +185,10 @@ def process(source):
 
 # write header + object into a file
 def writeFile(targetDirectory, fileName, header, obj):
-    with open(os.path.join(targetDirectory, fileName), "w", encoding="utf-8") as f:
+    #TODO get version number for file from object version
+    parts = fileName.split('.')
+    newFileName = parts[0] + "-1_1." + parts[1]
+    with open(os.path.join(targetDirectory, newFileName), "w", encoding="utf-8") as f:
         f.write(header)
         obj.export(f, 0, '', NAMESPACE)
 
