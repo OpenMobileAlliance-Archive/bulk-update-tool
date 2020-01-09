@@ -159,7 +159,7 @@ def bumpVersion(obj):
     minor = int(oldVersion[1]) + 1
     newVersion = "%s.%d" % (major, minor)
     obj.set_ObjectVersion(newVersion)            
-    urn = obj.get_ObjectURN();
+    urn = obj.get_ObjectURN()
     #TODO check if old version already exists in URN
     obj.set_ObjectURN(urn + ":" + newVersion)
 
